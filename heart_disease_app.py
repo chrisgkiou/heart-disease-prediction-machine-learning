@@ -10,7 +10,7 @@ st.title(':blue[Heart disease Prediction App]')
 st.write("""-- This app predicts A patient has a heart disease or not --
 
 """)
-st.text('The Person :green[does not have a Heart Disease] :sunglasses: 	:sparkling_heart:')
+st.write('The Person :green[does not have a Heart Disease] :sunglasses: 	:sparkling_heart:')
 st.download_button('Download Sample file link for check', 'https://github.com/ripon2488/heart-disease-prediction-machine-learning/blob/main/heart_disease_dataset.csv')
 st.sidebar.header('Please Input Features Value')
 
