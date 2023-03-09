@@ -10,7 +10,7 @@ st.title(':blue[Heart disease Prediction App]')
 st.write("""-- This app predicts a Patient has a heart disease or not --
 
 """)
-st.write(':point_left: :green[Please Fillup input field of left side '>' for Prediction ] :sunglasses:')
+st.write(':point_left: (click arrow sign for hide and unhide form) :green[Please Fillup the input field of left side for Prediction.] :sunglasses:')
 st.download_button('Download Sample file link for check', 'https://github.com/ripon2488/heart-disease-prediction-machine-learning/blob/main/heart_disease_dataset.csv')
 st.sidebar.header('Please Input Features Value')
 
