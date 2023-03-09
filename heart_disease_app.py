@@ -2,7 +2,7 @@ import streamlit as st
 import numpy as np # linear algebra
 import pandas as pd # data processing, CSV file I/O (e.g. pd.read_csv)
 import pickle
-
+from prediction import predict
 st.write("""
 # Heart disease Prediction App
 This app predicts If a patient has a heart disease oe not
@@ -51,25 +51,34 @@ input_df = user_input_features()
 #df = df[:1] # Selects only the first row (the user input data)
 
 st.write(input_df)
+st.button(“Predict type of Disease”)
 # Reads in saved classification model
 #load_clf = pickle.load(open('model_svc.sav', 'rb'))
 #-----------
-final_model = 'model_svc.sav'
-pickle.dump(final_model_svc, open(final_model, 'wb'))
+#final_model = 'model_svc.sav'
+#pickle.dump(final_model_svc, open(final_model, 'wb'))
  
 # some time later...
  
 # load the model from disk
-model = pickle.load(open(final_model, 'rb'))
+#model = pickle.load(open(final_model, 'rb'))
 #------------------
 
+import joblib
+def predict(data):
+    clf = joblib.load("model_svc.sav")
+    return clf.predict(data)
+
+
 # Apply model to make predictions
-prediction = model.predict(input_df)
+#prediction = model.predict(input_df)
 #prediction_proba = model.predict_proba(input_df)
+if st.button(“Predict type of Disease”):
+result = predict(input_df)
+st.text(result[0])
 
-
-st.subheader('Prediction')
-st.write(prediction)
+#st.subheader('Prediction')
+#st.write(prediction)
 
 #st.subheader('Prediction Probability')
 #st.write(prediction_proba)
