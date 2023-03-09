@@ -1,8 +1,7 @@
-!pip install seaborn
 import streamlit as st
 import numpy as np # linear algebra
 import pandas as pd # data processing, CSV file I/O (e.g. pd.read_csv)
-import seaborn as sns
+#import seaborn as sns
 import matplotlib.pyplot as plt
 from pandas.core.dtypes.common import is_numeric_dtype
 from sklearn.preprocessing import MinMaxScaler
