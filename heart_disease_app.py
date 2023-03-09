@@ -12,8 +12,8 @@ This app predicts If a patient has a heart disease oe not
 
 st.sidebar.header('User Input Features')
 
-'age', 'sex', 'cp', 'trtbps', 'chol', 'fbs', 'restecg', 'thalachh',
-       'exng', 'oldpeak', 'slp', 'caa', 'thall'
+#'age', 'sex', 'cp', 'trtbps', 'chol', 'fbs', 'restecg', 'thalachh',
+#       'exng', 'oldpeak', 'slp', 'caa', 'thall'
 
 # Collects user input features into dataframe
 #thall,cp,caa,thalachh,oldpeak,slp 
