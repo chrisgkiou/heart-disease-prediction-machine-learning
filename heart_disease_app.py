@@ -4,9 +4,9 @@ import pandas as pd # data processing, CSV file I/O (e.g. pd.read_csv)
 import pickle
 import sklearn
 #from prediction import predict
-st.write("""
+#st.write("""
 st.title (':blue [Heart disease Prediction App]')
--- This app predicts A patient has a heart disease or not --
+st.write("""-- This app predicts A patient has a heart disease or not --
 
 """)
 
