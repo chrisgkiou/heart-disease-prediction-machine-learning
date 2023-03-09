@@ -59,13 +59,13 @@ if st.button("Click here to Predict type of Disease"):
 st.write("""
 
 
-## 🤠 About Me: 
+### 🤠 About Me: 
 #### I always enjoyed Computer Science, Data Science and machine learning that has drove me to be an Engineer. <br>
 
 
- 🔭 I’m currently working on Database Administration, ML and DL.
- 🌱 I’m currently learning Data Analyics, Machine Learning ,Deep Learning and Data Science.
- 👯 I’m looking to collaborate on Data Engineering and AI.
+- 🔭 I’m currently working on Database Administration, ML and DL.
+- 🌱 I’m currently learning Data Analyics, Machine Learning ,Deep Learning and Data Science.
+- 👯 I’m looking to collaborate on Data Engineering and AI.
 - 🤔 I’m looking for help with Data Science and AI.
 - 💬 Ask me about Data Analysis, Engineering and ML.
 - 📫 How to reach me: <a href="https://www.linkedin.com/in/ripon2488/"> ripon2488 </a> 
@@ -76,7 +76,7 @@ st.write("""
 
 
 #### More Details for me:  https://sites.google.com/view/ripon2488
-## ✨ Tech Knowledge: 
+### ✨ Tech Knowledge: 
 
 ![](https://img.shields.io/badge/python-3670A0?style=for-the-badge&amp;logo=python&amp;logoColor=ffdd54)
 ![](https://img.shields.io/badge/Keras-%23D00000.svg?style=for-the-badge&amp;logo=Keras&amp;logoColor=white)
