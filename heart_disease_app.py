@@ -19,9 +19,7 @@ from sklearn.ensemble import GradientBoostingClassifier
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.ensemble import RandomForestClassifier
 
-import warnings
-warnings.filterwarnings('ignore')
-%matplotlib inline
+
 import pickle
 
 st.write("""
