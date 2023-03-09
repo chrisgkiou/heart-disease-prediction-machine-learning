@@ -61,7 +61,7 @@ st.write("""
 # 
 # 
 ### 🤠 About Me: 
-#### I always enjoyed Computer Science, Data Science and machine learning that has drove me to be an Engineer. <br>
+#### 
 
 
 - 🔭 I’m currently working on Database Administration, ML and DL.
