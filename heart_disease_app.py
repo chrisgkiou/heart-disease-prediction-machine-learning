@@ -25,13 +25,13 @@ def user_input_features():
     slope = st.sidebar.number_input('he slope of the peak exercise ST segmen: ')
 
 
-
+#thall,cp,caa,thalachh,oldpeak,slp 
     data = {'cp': cp,
-            'thalach':tha,
+            'thalachh':tha,
             'oldpeak':old,
-            'slope':slope,
-            'ca':ca,
-            'thal':thal
+            'slp':slope,
+            'caa':ca,
+            'thall':thal
                 }
     features = pd.DataFrame(data, index=[0])
     return features
