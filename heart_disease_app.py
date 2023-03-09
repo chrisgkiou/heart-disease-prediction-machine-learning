@@ -55,7 +55,7 @@ st.write(input_df)
 #load_clf = pickle.load(open('model_svc.sav', 'rb'))
 #-----------
 final_model = 'model_svc.sav'
-pickle.dump(final_model_svc, open(final_model, 'wb'))
+#pickle.dump(final_model_svc, open(final_model, 'wb'))
  
 # some time later...
  
