@@ -14,7 +14,7 @@ st.sidebar.header('User Input Features')
 
 
 # Collects user input features into dataframe
-thall,cp,caa,thalachh,oldpeak,slp 
+#thall,cp,caa,thalachh,oldpeak,slp 
 def user_input_features():
     
     thal = st.sidebar.selectbox('thal',(0,1,2))
