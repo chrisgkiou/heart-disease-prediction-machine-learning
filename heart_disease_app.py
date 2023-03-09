@@ -59,6 +59,7 @@ if st.button("Click here to Predict type of Disease"):
 st.write("""
 
 # 
+# 
 ### 🤠 About Me: 
 #### I always enjoyed Computer Science, Data Science and machine learning that has drove me to be an Engineer. <br>
 
