@@ -74,7 +74,7 @@ def predict(data):
 #prediction = model.predict(input_df)
 #prediction_proba = model.predict_proba(input_df)
 if st.button("Predict type of Disease"):
-result = predict(input_df)
+    result = predict(input_df)
 st.text(result[0])
 
 #st.subheader('Prediction')
