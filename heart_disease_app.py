@@ -1,0 +1,66 @@
+import streamlit as st
+import pandas as pd
+import numpy as np
+import pickle
+
+st.write("""
+# Heart disease Prediction App
+This app predicts If a patient has a heart disease oe not
+
+""")
+
+st.sidebar.header('User Input Features')
+
+
+
+# Collects user input features into dataframe
+thall,cp,caa,thalachh,oldpeak,slp 
+def user_input_features():
+    
+    thal = st.sidebar.selectbox('thal',(0,1,2))
+    cp = st.sidebar.selectbox('Chest pain type',(0,1,2,3))
+    ca = st.sidebar.selectbox('number of major vessels caa',(0,1,2,3))
+    tha = st.sidebar.number_input('Maximum heart rate achieved thalachh: ')
+    old = st.sidebar.number_input('oldpeak: ')
+    slope = st.sidebar.number_input('he slope of the peak exercise ST segmen: ')
+
+
+
+    data = {'cp': cp,
+            'thalach':tha,
+            'oldpeak':old,
+            'slope':slope,
+            'ca':ca,
+            'thal':thal
+                }
+    features = pd.DataFrame(data, index=[0])
+    return features
+input_df = user_input_features()
+
+# Combines user input features with entire dataset
+# This will be useful for the encoding phase
+#heart_dataset = pd.read_csv('heart.csv')
+#heart_dataset = heart_dataset.drop(columns=['target'])
+
+#df = pd.concat([input_df,heart_dataset],axis=0)
+
+# Encoding of ordinal features
+# https://www.kaggle.com/pratik1120/penguin-dataset-eda-classification-and-clustering
+#df = pd.get_dummies(df, columns = ['sex', 'cp', 'fbs', 'restecg', 'exang', 'slope', 'ca', 'thal'])
+
+#df = df[:1] # Selects only the first row (the user input data)
+
+st.write(input_df)
+# Reads in saved classification model
+load_clf = pickle.load(open('model_svc.sav', 'rb'))
+
+# Apply model to make predictions
+prediction = load_clf.predict(input_df)
+prediction_proba = load_clf.predict_proba(input_df)
+
+
+st.subheader('Prediction')
+st.write(prediction)
+
+st.subheader('Prediction Probability')
+st.write(prediction_proba)
