@@ -1,6 +1,27 @@
 import streamlit as st
-import pandas as pd
-import numpy as np
+import numpy as np # linear algebra
+import pandas as pd # data processing, CSV file I/O (e.g. pd.read_csv)
+import seaborn as sns
+import matplotlib.pyplot as plt
+from pandas.core.dtypes.common import is_numeric_dtype
+from sklearn.preprocessing import MinMaxScaler
+from sklearn.model_selection import train_test_split as tts
+from sklearn.metrics import classification_report,accuracy_score,confusion_matrix,precision_score,recall_score,f1_score,auc, plot_roc_curve,roc_auc_score,roc_curve,roc_auc_score,plot_confusion_matrix,plot_precision_recall_curve
+#from pandas_profiling import ProfileReport
+from ydata_profiling import ProfileReport
+# Import Different Algorithm
+from sklearn.linear_model import LinearRegression, LogisticRegression
+from sklearn.svm import SVC
+from sklearn.neighbors import KNeighborsClassifier
+from xgboost import XGBClassifier
+from sklearn.ensemble import AdaBoostClassifier
+from sklearn.ensemble import GradientBoostingClassifier
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.ensemble import RandomForestClassifier
+
+import warnings
+warnings.filterwarnings('ignore')
+%matplotlib inline
 import pickle
 
 st.write("""
