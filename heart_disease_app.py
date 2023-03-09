@@ -4,7 +4,7 @@ import pandas as pd # data processing, CSV file I/O (e.g. pd.read_csv)
 import pickle
 import sklearn
 
-st.image('header.jpg')
+st.image('Header.jpg')
 st.title(':blue[Heart disease Prediction App]')
 st.write("""-- This app predicts A patient has a heart disease or not --
 
