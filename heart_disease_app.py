@@ -10,7 +10,7 @@ st.title(':blue[Heart disease Prediction App]')
 st.write("""-- This app predicts A patient has a heart disease or not --
 
 """)
-st.download_button('Download file', https://github.com/ripon2488/heart-disease-prediction-machine-learning/blob/main/heart_disease_dataset.csv)
+st.download_button('heart_disease_dataset.csv', Download Sample file for check)
 st.sidebar.header('Please Input Features Value')
 
 # Collects user input features into dataframe
