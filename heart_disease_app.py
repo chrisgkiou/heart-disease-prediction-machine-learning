@@ -6,14 +6,11 @@ import sklearn
 #from prediction import predict
 st.write("""
 # Heart disease Prediction App
-This app predicts If a patient has a heart disease oe not
+-- This app predicts A patient has a heart disease or not --
 
 """)
 
-st.sidebar.header('User Input Features')
-
-#'age', 'sex', 'cp', 'trtbps', 'chol', 'fbs', 'restecg', 'thalachh',
-#       'exng', 'oldpeak', 'slp', 'caa', 'thall'
+st.sidebar.header('Please Input Features Value')
 
 # Collects user input features into dataframe
 #thall,cp,caa,thalachh,oldpeak,slp 
@@ -30,7 +27,7 @@ def user_input_features():
     oldpeak = st.sidebar.number_input(' ST depression induced by exercise relative to rest (oldpeak): ')
     slp = st.sidebar.number_input('The slope of the peak exercise ST segment (slp): ')
     caa = st.sidebar.selectbox('Number of major vessels(0-3) colored by flourosopy (caa):',(0,1,2,3))
-    thall = st.sidebar.selectbox(' 0=normal, 1=fixed defect, 2 = reversable defect',(0,1,2))
+    thall = st.sidebar.selectbox(' Thall 0=normal, 1=fixed defect, 2 = reversable defect',(0,1,2))
 
 
 #thall,cp,caa,thalachh,oldpeak,slp 
@@ -55,7 +52,7 @@ input_df = user_input_features()
 #df = df[:1] # Selects only the first row (the user input data)
 
 st.write(input_df)
-#st.button("Predict type of Disease")
+st.button("Predict type of Disease")
 # Reads in saved classification model
 #load_clf = pickle.load(open('model_svc.sav', 'rb'))
 #-----------
@@ -75,14 +72,14 @@ def predict(data):
 
 
 # Apply model to make predictions
-prediction = predict(input_df)
+#prediction = predict(input_df)
 #prediction_proba = model.predict_proba(input_df)
-#if st.button("Predict type of Disease"):
-#    result = predict(input_df)
-#st.text(result[0])
+if st.button("Predict type of Disease"):
+    result = predict(input_df)
+st.text(result[0])
 
-st.subheader('Prediction')
-st.write(prediction)
+#st.subheader('Prediction')
+#st.write(prediction)
 
 #st.subheader('Prediction Probability')
 #st.write(prediction_proba)
