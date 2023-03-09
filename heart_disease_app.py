@@ -51,7 +51,7 @@ input_df = user_input_features()
 #df = df[:1] # Selects only the first row (the user input data)
 
 st.write(input_df)
-st.button(“Predict type of Disease”)
+st.button("Predict type of Disease")
 # Reads in saved classification model
 #load_clf = pickle.load(open('model_svc.sav', 'rb'))
 #-----------
@@ -73,7 +73,7 @@ def predict(data):
 # Apply model to make predictions
 #prediction = model.predict(input_df)
 #prediction_proba = model.predict_proba(input_df)
-if st.button(“Predict type of Disease”):
+if st.button("Predict type of Disease"):
 result = predict(input_df)
 st.text(result[0])
 
