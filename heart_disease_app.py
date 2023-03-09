@@ -76,7 +76,12 @@ def predict(data):
 #prediction_proba = model.predict_proba(input_df)
 if st.button("Predict type of Disease"):
     result = predict(input_df)
-    st.text(result[0])
+
+    if (result[0]== 0):
+      print('The Person does not have a Heart Disease')
+    else:
+      print('The Person has Heart Disease')
+    #st.text(result[0])
 
 #st.subheader('Prediction')
 #st.write(prediction)
