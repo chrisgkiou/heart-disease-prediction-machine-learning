@@ -78,9 +78,9 @@ if st.button("Click here to Predict type of Disease"):
     result = predict(input_df)
 
     if (result[0]== 0):
-        st.text('The Person does not have a Heart Disease')
+        st.subheader('The Person :green[does not have a Heart Disease]')
     else:
-        st.text('The Person has Heart Disease')
+        st.subheader('The Person :red[has Heart Disease]')
         
 
 #st.subheader('Prediction')
