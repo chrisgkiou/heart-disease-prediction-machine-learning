@@ -7,7 +7,7 @@ import joblib
 
 st.image('header.png')
 st.title(':blue[Heart disease Prediction App]')
-st.write("""-- This app predicts A patient has a heart disease or not --
+st.write("""-- This app predicts a Patient has a heart disease or not --
 
 """)
 st.write(':point_left: :green[Please Fillup input field of left side for Prediction ] :sunglasses:')
