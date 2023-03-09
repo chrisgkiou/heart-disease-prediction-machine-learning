@@ -5,7 +5,7 @@ import pickle
 import sklearn
 #from prediction import predict
 st.write("""
-# Heart disease Prediction App
+st.title (':blue [Heart disease Prediction App]')
 -- This app predicts A patient has a heart disease or not --
 
 """)
