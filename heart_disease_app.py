@@ -56,7 +56,7 @@ if st.button("Click here to Predict type of Disease"):
         st.subheader('The Person :red[has Heart Disease] :worried:')
         
 #https://streamlit-emoji-shortcodes-streamlit-app-gwckff.streamlit.app/
-
+st.write("""
 <h1> Dream towards Data Scientist </h1><br>
 
 <h2>🤠 About Me: </h2><br>
@@ -112,4 +112,4 @@ I always enjoyed Computer Science, Data Science and machine learning that has dr
 ![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fmdriponmiah%2Fkaggle-badge&count_bg=%23DDAA17&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)
 ![mdriponmiah](https://road-to-kaggle-grandmaster.vercel.app/api/simple/mdriponmiah) 
 
-                                                                                        
+""")                                                                                  
