@@ -59,24 +59,24 @@ if st.button("Click here to Predict type of Disease"):
 st.write("""
 
 
-# 🤠 About Me: 
-I always enjoyed Computer Science, Data Science and machine learning that has drove me to be an Engineer. <br>
+## 🤠 About Me: 
+#### I always enjoyed Computer Science, Data Science and machine learning that has drove me to be an Engineer. <br>
 
 
-<ul>- 🔭 I’m currently working on Database Administration, ML and DL.</ul>
-<ul>- 🌱 I’m currently learning Data Analyics, Machine Learning ,Deep Learning and Data Science.</ul>
-<ul>- 👯 I’m looking to collaborate on Data Engineering and AI.</ul>
-<ul>- 🤔 I’m looking for help with Data Science and AI.</ul>
-<ul>- 💬 Ask me about Data Analysis, Engineering and ML.</ul>
-<ul>- 📫 How to reach me: <a href="https://www.linkedin.com/in/ripon2488/"> ripon2488 </a> </ul>
-<ul>- 📫 Workflow in Kaggle: <a href="https://www.kaggle.com/mdriponmiah"> mdriponmiah </a> </ul>
-<ul>- 😄 Pronouns: Ripon (রিপন)</ul>
-<ul>- ⚡ Fun fact: </ul>
+ 🔭 I’m currently working on Database Administration, ML and DL.
+ 🌱 I’m currently learning Data Analyics, Machine Learning ,Deep Learning and Data Science.
+ 👯 I’m looking to collaborate on Data Engineering and AI.
+- 🤔 I’m looking for help with Data Science and AI.
+- 💬 Ask me about Data Analysis, Engineering and ML.
+- 📫 How to reach me: <a href="https://www.linkedin.com/in/ripon2488/"> ripon2488 </a> 
+- 📫 Workflow in Kaggle: <a href="https://www.kaggle.com/mdriponmiah"> mdriponmiah </a> 
+- 😄 Pronouns: Ripon (রিপন)
+- ⚡ Fun fact: 
 
 
-<br>
-# More Details for me:  https://sites.google.com/view/ripon2488
-# ✨ Tech Knowledge: 
+
+#### More Details for me:  https://sites.google.com/view/ripon2488
+## ✨ Tech Knowledge: 
 
 ![](https://img.shields.io/badge/python-3670A0?style=for-the-badge&amp;logo=python&amp;logoColor=ffdd54)
 ![](https://img.shields.io/badge/Keras-%23D00000.svg?style=for-the-badge&amp;logo=Keras&amp;logoColor=white)
@@ -96,6 +96,6 @@ I always enjoyed Computer Science, Data Science and machine learning that has dr
 
 
 ![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fmdriponmiah%2Fkaggle-badge&count_bg=%23DDAA17&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)
-![mdriponmiah](https://road-to-kaggle-grandmaster.vercel.app/api/simple/mdriponmiah) 
+
 
 """)                                                                                  
