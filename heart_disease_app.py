@@ -78,10 +78,10 @@ if st.button("Predict type of Disease"):
     result = predict(input_df)
 
     if (result[0]== 0):
-      print('The Person does not have a Heart Disease')
+        st.text('The Person does not have a Heart Disease')
     else:
-      print('The Person has Heart Disease')
-    #st.text(result[0])
+        st.text('The Person has Heart Disease')
+        
 
 #st.subheader('Prediction')
 #st.write(prediction)
