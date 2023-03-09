@@ -12,27 +12,30 @@ This app predicts If a patient has a heart disease oe not
 
 st.sidebar.header('User Input Features')
 
-
+'age', 'sex', 'cp', 'trtbps', 'chol', 'fbs', 'restecg', 'thalachh',
+       'exng', 'oldpeak', 'slp', 'caa', 'thall'
 
 # Collects user input features into dataframe
 #thall,cp,caa,thalachh,oldpeak,slp 
 def user_input_features():
-    
-    thal = st.sidebar.selectbox('thal',(0,1,2))
-    cp = st.sidebar.selectbox('Chest pain type',(0,1,2,3))
-    ca = st.sidebar.selectbox('number of major vessels caa',(0,1,2,3))
-    tha = st.sidebar.number_input('Maximum heart rate achieved thalachh: ')
-    old = st.sidebar.number_input('oldpeak: ')
-    slope = st.sidebar.number_input('he slope of the peak exercise ST segmen: ')
+    age = st.sidebar.number_input('Age of persons: ')
+    sex = st.sidebar.number_input('Gender of persons: ')
+    cp = st.sidebar.selectbox('Chest pain type (4 values)',(0,1,2,3))
+    trtbps = st.sidebar.number_input('Resting blood pressure: ')
+    chol = st.sidebar.number_input('Serum cholestrol in mg/dl: ')
+    fbs =  st.sidebar.number_input('Fasting blood sugar > 120 mg/dl: ')
+    restecg = st.sidebar.selectbox('Resting electrocardio results:', ( 0,1,2))
+    thalachh = st.sidebar.number_input('Maximum heart rate achieved thalach: ')
+    exng = st.sidebar.number_input('Exercise induced angina: ')
+    oldpeak = st.sidebar.number_input(' ST depression induced by exercise relative to rest (oldpeak): ')
+    slp = st.sidebar.number_input('The slope of the peak exercise ST segment (slp): ')
+    caa = st.sidebar.selectbox('Number of major vessels(0-3) colored by flourosopy (caa):',(0,1,2,3))
+    thall = st.sidebar.selectbox(' 0=normal, 1=fixed defect, 2 = reversable defect',(0,1,2))
 
 
 #thall,cp,caa,thalachh,oldpeak,slp 
-    data = {'cp': cp,
-            'thalachh':tha,
-            'oldpeak':old,
-            'slp':slope,
-            'caa':ca,
-            'thall':thal
+    data = {'age':age, 'sex':sex, 'cp':cp, 'trtbps':trtbps, 'chol':chol, 'fbs':fbs, 'restecg':restecg, 'thalachh':thalachh,
+       'exng':exng, 'oldpeak':oldpeak, 'slp':slp, 'caa':caa, 'thall':thall
                 }
     features = pd.DataFrame(data, index=[0])
     return features
@@ -67,7 +70,7 @@ st.write(input_df)
 
 import joblib
 def predict(data):
-    clf = joblib.load("model_svc.sav")
+    clf = joblib.load("model_LogR.sav")
     return clf.predict(data)
 
 
