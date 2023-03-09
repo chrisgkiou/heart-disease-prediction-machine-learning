@@ -52,11 +52,20 @@ input_df = user_input_features()
 
 st.write(input_df)
 # Reads in saved classification model
-load_clf = pickle.load(open('model_svc.sav', 'rb'))
+#load_clf = pickle.load(open('model_svc.sav', 'rb'))
+#-----------
+final_model = 'model_svc.sav'
+pickle.dump(final_model_svc, open(final_model, 'wb'))
+ 
+# some time later...
+ 
+# load the model from disk
+model = pickle.load(open(final_model, 'rb'))
+#------------------
 
 # Apply model to make predictions
-prediction = load_clf.predict(input_df)
-prediction_proba = load_clf.predict_proba(input_df)
+prediction = model.predict(input_df)
+prediction_proba = model.predict_proba(input_df)
 
 
 st.subheader('Prediction')
