@@ -18,18 +18,18 @@ st.sidebar.header('Please Input Features Value')
 
 def user_input_features():
     age = st.sidebar.number_input('Age of persons: ')
-    sex = st.sidebar.number_input('Gender of persons: ')
+    sex = st.sidebar.number_input('Gender of persons 0=Female, 1=Male: ')
     cp = st.sidebar.selectbox('Chest pain type (4 values)',(0,1,2,3))
     trtbps = st.sidebar.number_input('Resting blood pressure: ')
     chol = st.sidebar.number_input('Serum cholestrol in mg/dl: ')
-    fbs =  st.sidebar.number_input('Fasting blood sugar > 120 mg/dl: ')
+    fbs =  st.sidebar.number_input('Fasting blood sugar > 120 mg/dl:',( 0,1))
     restecg = st.sidebar.selectbox('Resting electrocardio results:', ( 0,1,2))
     thalachh = st.sidebar.number_input('Maximum heart rate achieved thalach: ')
-    exng = st.sidebar.number_input('Exercise induced angina: ')
+    exng = st.sidebar.number_input('Exercise induced angina: ',( 0,1))
     oldpeak = st.sidebar.number_input(' ST depression induced by exercise relative to rest (oldpeak): ')
-    slp = st.sidebar.number_input('The slope of the peak exercise ST segment (slp): ')
-    caa = st.sidebar.selectbox('Number of major vessels(0-3) colored by flourosopy (caa):',(0,1,2,3))
-    thall = st.sidebar.selectbox(' Thall 0=normal, 1=fixed defect, 2 = reversable defect',(0,1,2))
+    slp = st.sidebar.number_input('The slope of the peak exercise ST segment (slp): ', ( 0,1,2))
+    caa = st.sidebar.selectbox('Number of major vessels(0-3) colored by flourosopy (caa):',(0,1,2,3,4))
+    thall = st.sidebar.selectbox(' Thall 0=normal, 1=fixed defect, 2 = reversable defect',(0,1,2,3))
 
 
     data = {'age':age, 'sex':sex, 'cp':cp, 'trtbps':trtbps, 'chol':chol, 'fbs':fbs, 'restecg':restecg, 'thalachh':thalachh,
